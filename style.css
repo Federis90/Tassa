@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*utility*/
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    background: #333;
+    padding: 13px 18px;
+    border: none;
+    text-transform: uppercase;
+}
+.btn-light {
+    background: #bbb;
+    color: #333;
+}
+
+.btn:hover {
+    background: orange;
+    color: #333;
+}
+
+.text-center {
+    text-align: center;
+}
+/*header*/
+
+#navbar {
+    background: #333;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .container ul {
+    display: flex;
+    padding-right: 1rem;
+}
+
+#navbar .container ul li {
+    list-style: none;
+}
+
+#navbar .container ul li a {
+    padding: 20px;
+    display: block;
+}
+
+#navbar .container h1 {
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+#navbar ul li a:hover,
+#navbar ul li li a.current {
+    background: #555;
+    color: orange;
+}
+
+/*section*/
+
+#showcase .container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background: url('../IMG/mockup-863469_1920.jpg') no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase .container h1 {
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+#showcase .container p {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.text-primary {
+    color: orange;
+}
+
+/*section 2*/
+
+#showcase2 .container {
+    display: flex;
+    height: 450px;
+}
+
+#showcase2 .container .image {
+    background: url("../IMG/analysis-1841158_1920.jpg") no-repeat center center/cover;
+    flex: 1;
+}
+
+#showcase2 .container .section-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+#showcase2 .container .section-text h1 {
+    padding-bottom: 20px;
+}
+
+#showcase2 .container .section-text p {
+    padding-bottom: 20px;
+}
+
+/*section 3*/
+
+#showcase3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.box-white {
+    background: white;
+}
+
+.box-orange {
+    background: orange;
+}
+
+.box {
+    flex: 1;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#showcase3 i {
+    padding-bottom: 20px;
+}
+
+#showcase3 h3 {
+    padding-bottom: 30px;
+}
+
+/*footer*/
+
+footer {
+    background: #333;
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/*About Info*/
+
+#about-info .container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#about-info img {
+    width: 50%;
+    border-radius: 150%;
+    margin: auto;
+}
+
+#about-info .info-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    padding-left: 100px;
+}
+
+#about-info .info-left p {
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#about-info .info-left h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#about-info .info-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/*Sezione 2 about*/
+
+#testimonials .container h2 {
+    background: #333;
+    text-align: center;
+    color: #fff;
+}
+
+#testimonials {
+    padding-top: 0;
+    background: url("../IMG/icon-4102192_1280.png") no-repeat center center/cover;
+}
+
+#testimonials .progetto1 img {
+    width: 150px;
+    border-radius: 50%;
+    opacity: unset;
+}
+
+#testimonials .progetto1 {
+    padding: 20px;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    opacity: 0.9;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+} 
+
+#testimonials p {
+    width: 80%;
+}
+
+/*contact*/
+
+#contact-form {
+    padding: 2rem 5rem;
+
+}
+
+#contact-form p {
+    padding-bottom: 1rem;
+}
+
+#contact-form button {
+    margin-top: 1rem;
+}
+
+#contact-form h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contact-form textarea {
+    height: 180px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: orange;
+}
+
+/*contact info*/
+
+#contact-info .container {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    background: #333;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+#contact-info i,
+#contact-info h3 {
+    margin-bottom: 1rem;;
+}
+
+#contact-info .container #testo-destra {
+    margin-right: 30rem;
+}
+
+#contact-info .container #testo-destra1 {
+    margin-right: 30rem;
+}
+
+#contact-info .container #testo-destra2 {
+    margin-right: 30rem;
+}
+
+#contact-info .container #testo-sinistra {
+    margin-left: 30rem;
+}
+
+#contact-info .container #testo-sinistra1 {
+    margin-left: 30rem;
+}
+
+#contact-info .container #testo-sinistra2 {
+    margin-left: 30rem;
+}
+
+#contact-info .info-box #testo-centro2 {
+    text-decoration: none;
+    color: orange;
+}
+
